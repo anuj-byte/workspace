@@ -1,0 +1,1 @@
+if parents want to send something to it child it send it the form of props .

@@ -1,0 +1,28 @@
+{
+  "EmployeeDetails": [
+    {
+      "id": "4",
+      "empname": "joe",
+      "empEmail": "joe@gmail.com",
+      "empRole": "Trainee"
+    },
+    {
+      "id": "5",
+      "empname": "john",
+      "empEmail": "john@gmail.com",
+      "empRole": "Trainee"
+    },
+    {
+      "id": "6",
+      "empname": "joye",
+      "empEmail": "joye@gmail.com",
+      "empRole": "Trainee"
+    },
+    {
+      "id": "7",
+      "empname": "joekey",
+      "empEmail": "joeky@gmail.com",
+      "empRole": "Trainee"
+    }
+  ]
+}

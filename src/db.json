@@ -1,0 +1,16 @@
+{
+  "EmployeeDetails": [
+    {
+      "id": "102",
+      "empname": "hero21",
+      "empEmail": "hero21@gmail.com",
+      "empRole": "Trainee"
+    },
+    {
+      "id": "77",
+      "empname": "Anuj",
+      "empEmail": "xyz@gmail.com",
+      "empRole": "HR"
+    }
+  ]
+}
