@@ -8,11 +8,16 @@ const FunctionalComponent=(props)=>{
     const increment=()=>{
         setcount(count+1)
     }
+    const decrement=()=>{
+        setcount(count-1)
+    }
     return(
         <div>
             <h1>{props.prop1}</h1>
-            <p >{count}</p>
             <button onClick={increment}>+</button>
+            <p >{count}</p>
+           
+            <button onClick={decrement}>-</button>
         </div>
     )
 }
