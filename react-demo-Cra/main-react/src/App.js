@@ -1,29 +1,29 @@
-import React from 'react'
-import Textfield from '@mui/material/TextField'
-import Button  from '@mui/material/Button'
-function App(props){
-  return(
+import React from "react";
+import SignUpComponents from "./components/SPA_Components/Signup";
+import { BrowserRouter, Link, Routes, Route } from "react-router-dom";
+import Dashboard from "./components/SPA_Components/Dashboard";
+import HomePage from "./components/SPA_Components/ViewMentor";
+
+function App() {
+  return (
     <div>
-    {/*<div spacing={2}>
-    <Textfield id='outlined-basic' label="username" variant='outlined'></Textfield>
-    <Textfield id='outlined-basic' label="Email" variant='outlined'></Textfield>
-    <Button variant="contained">Submit</Button>
-  </div>*/}
-  
-{
-  
-    props.StudentData.map((iteam)=>(
-      <div>
-        <h1>{iteam.fname}</h1>
-        {iteam.backlog?<h1>You have backlogs</h1>:<h1>You dont have backlogs</h1>}
-      </div>
-    
-    ))
-    }
+      <BrowserRouter>
+        {/*<Link to="/signup">Signup</Link>
+        <Link to="/Dashboard">Dashboard</Link>*/}
+        <Routes>
+          <Route path="/" element={<HomePage></HomePage>}></Route>
+          <Route
+            path="/signup"
+            element={<SignUpComponents></SignUpComponents>}
+          ></Route>
+          <Route
+            path="/Dashboard/:username"
+            element={<Dashboard></Dashboard>}
+          ></Route>
+        </Routes>
+      </BrowserRouter>
     </div>
-
-  )
+  );
 }
-  
 
-export default App
+export default App;
